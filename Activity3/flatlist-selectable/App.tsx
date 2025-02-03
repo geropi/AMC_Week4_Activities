@@ -133,7 +133,7 @@ const colors = ['blue','red','yellow','purple','orange','green','brown','violet'
 
 
 const App = () => {
-  const [selectedId, setSelectedId] = useState<string>();
+  const [selectedId, setSelectedId] = useState();
   const renderItem = ({item, index}) => {
     const backgroundColor = item.id === selectedId ? 'black' : colors[index % colors.length];
     const color = item.id === selectedId ? 'white' : 'black';
